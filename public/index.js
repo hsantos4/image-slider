@@ -3,12 +3,21 @@ const collapse = document.querySelector('.collapse');
 const carouselItem = document.querySelector('.carousel-item')
 const nextIcon = document.querySelector('.carousel-control-next');
 const prevIcon = document.querySelector('.carousel-control-prev')
-const img = document.querySelector('.img-fluid')
-let number = [];
+let img = [];
+
 
 
 navBarToggler.addEventListener('click', openCloseMenu)
-nextIcon.addEventListener('click', slideImageNext)
+
+nextIcon.addEventListener('click', () => {
+    
+    for (let i = 0; i < img.length; i++) {
+        
+        
+    }
+
+    
+})
 
 // opens and closes the mobile menu
 function openCloseMenu() {
@@ -25,22 +34,14 @@ function openCloseMenu() {
 
 
 
-function slideImageNext() {
-
-    // creates the numbers 1 - 3 and pushes them into the empty arr
-    
-    for (let i = 1; i < 4; i++) {
-        let newNumbers = number.push(i);
-
-
-         // access to the image src 
-        img.src = `assets/mountains/mountain-${newNumbers}.jpeg`;
-      
-
-    }
-   
-
-}
+// function slideImageNext() {
+//     // creates the numbers 1 - 3 and pushes them into the empty arr
+//     for (let i = 1; i < 4; i++) {
+//         let newNumbers = number.push(i);
+//          // access to the image src 
+//         img.src = `assets/mountains/mountain-${newNumbers}.jpeg`;
+//     }
+// }
 
 function slideImagePrev() {
     
